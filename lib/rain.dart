@@ -7,7 +7,7 @@ class Rain extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('RAINBOW'),
+      appBar: AppBar(title: Text('assaignment'),
       ),
       body: Column(
         children: <Widget>[
@@ -42,7 +42,7 @@ class Rain extends StatelessWidget {
               )
           ),
         ],
-      ),floatingActionButton: FloatingActionButton(onPressed: (){Navigator.pushReplacementNamed(context, 'reg');}),
+      ),floatingActionButton: FloatingActionButton(onPressed: (){Navigator.pushReplacementNamed(context, 'reg');},child: Icon(Icons.add),),
     );
   }
 }

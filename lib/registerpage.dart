@@ -9,31 +9,31 @@ class Registerpage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
 
-    return ListView(padding: EdgeInsets.all(10),
+    return Scaffold(appBar: AppBar(title: Text('assaignment'),),body:ListView(padding: EdgeInsets.all(10),
       children: [
-          Text('Sign up',textScaleFactor: 2,),
+          Text('Sign up',textScaleFactor: 2,),SizedBox(height: 10,),
         TextFormField(
           decoration:  InputDecoration(
               border: OutlineInputBorder(), hintText: 'Email'),focusNode: email,
-        ),
+        ),SizedBox(height: 10,),
         TextFormField(
           decoration: InputDecoration(
             border: OutlineInputBorder(),hintText: 'Passowrd'),focusNode: password,
-        ),
+        ),SizedBox(height: 10,),
         Row(
-          children: [Text('already have an account ?'),TextButton(onPressed:(){Navigator.pushNamed(context, 'sin');}, child: Text('login'))],
-        ),
-          Text('Name'),
-        TextFormField(decoration:  InputDecoration(border: OutlineInputBorder(),hintText: 'first name'),focusNode: first,),
-        TextFormField(decoration:  InputDecoration(border: OutlineInputBorder(),hintText: 'Last name'),focusNode: last,),
-          Text('Address'),
-        TextFormField(decoration:  InputDecoration(border: OutlineInputBorder(),hintText: 'street'),focusNode: street,),
-        TextFormField(decoration:  InputDecoration(border: OutlineInputBorder(),hintText: 'apt #'),focusNode: apt,),
-        TextFormField(decoration:  InputDecoration(border: OutlineInputBorder(),hintText: 'zip code'),focusNode: zip,),
-        ElevatedButton(onPressed: () { Navigator.pushReplacement(context, MaterialPageRoute(builder: (context){return Rain();}));},
-        child: Text('Sign Up'),)
+          children: [Text('already have an account ?',textScaleFactor: 1.4),TextButton(onPressed:(){Navigator.pushNamed(context, 'sin');}, child: Text('login',textScaleFactor: 1.4,style: TextStyle(color: Colors.blue),))],
+        ),SizedBox(height: 10,),
+          Text('Name'),SizedBox(height: 10,),
+        TextFormField(decoration:  InputDecoration(border: OutlineInputBorder(),hintText: 'first name'),focusNode: first,),SizedBox(height: 10,),
+        TextFormField(decoration:  InputDecoration(border: OutlineInputBorder(),hintText: 'Last name'),focusNode: last,),SizedBox(height: 10,),
+          Text('Address'),SizedBox(height: 10,),
+        TextFormField(decoration:  InputDecoration(border: OutlineInputBorder(),hintText: 'street'),focusNode: street,),SizedBox(height: 10,),
+        TextFormField(decoration:  InputDecoration(border: OutlineInputBorder(),hintText: 'apt #'),focusNode: apt,),SizedBox(height: 10,),
+        TextFormField(decoration:  InputDecoration(border: OutlineInputBorder(),hintText: 'zip code'),focusNode: zip,),SizedBox(height: 10,),
+        ElevatedButton(onPressed: () { Navigator.pushReplacementNamed(context, 'rain');},
+        child: Text('Sign Up',textScaleFactor: 2),)
       ],
-    );
+    ));
   }
 
 }

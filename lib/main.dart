@@ -12,7 +12,7 @@ class Sign extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(home:Scaffold(appBar: AppBar(title: Text('assignment'),) ,body: Registerpage()),
+    return MaterialApp(home:Scaffold(appBar: AppBar(title: Text('assaignment'),) ,body: Registerpage()),
         routes: {
           'sin': (context) =>  Signinpage(),
           'reg': (context) => Registerpage(),
